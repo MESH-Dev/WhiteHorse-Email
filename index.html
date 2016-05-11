@@ -1,0 +1,453 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Really Simple HTML Email Template</title>
+<style>
+/* -------------------------------------
+    GLOBAL
+------------------------------------- */
+* {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 600px;
+  width: auto;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  width: 100% !important;
+}
+/* -------------------------------------
+    ELEMENTS
+------------------------------------- */
+a {
+  color: #348eda;
+}
+.btn-primary {
+  Margin-bottom: 10px;
+  width: auto !important;
+}
+.btn-primary td {
+  background-color: #348eda;
+  border-radius: 25px;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: top;
+}
+.btn-primary td a {
+  background-color: #348eda;
+  border: solid 1px #348eda;
+  border-radius: 25px;
+  border-width: 10px 20px;
+  display: inline-block;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 2;
+  text-decoration: none;
+}
+.last {
+  margin-bottom: 0;
+}
+.first {
+  margin-top: 0;
+}
+.padding {
+  padding: 10px 0;
+}
+/* -------------------------------------
+    BODY
+------------------------------------- */
+table.body-wrap {
+  padding: 20px;
+  width: 100%;
+}
+table.body-wrap .container {
+  border: 1px solid #f0f0f0;
+}
+/* -------------------------------------
+    FOOTER
+------------------------------------- */
+table.footer-wrap {
+  clear: both !important;
+  width: 100%;
+}
+.footer-wrap .container p {
+  color: #666666;
+  font-size: 12px;
+
+}
+table.footer-wrap a {
+  color: #999999;
+}
+/* -------------------------------------
+    TYPOGRAPHY
+------------------------------------- */
+h1,
+h2,
+h3 {
+  color: #111111;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+  line-height: 1.2em;
+  margin: 40px 0 10px;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 22px;
+}
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+li {
+    display: inline-block;
+}
+p,
+ul,
+ol {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+ul li,
+ol li {
+  margin-left: 5px;
+  list-style-position: inside;
+}
+/* ---------------------------------------------------
+    RESPONSIVENESS
+------------------------------------------------------ */
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+  clear: both !important;
+  display: block !important;
+  Margin: 0 auto !important;
+  max-width: 600px !important;
+}
+/* Set the padding on the td rather than the div for Outlook compatibility */
+.body-wrap .container {
+  padding: 20px;
+}
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+}
+/* Let's make sure tables in the content area are 100% wide */
+.content table {
+  width: 100%;
+}
+</style>
+</head>
+
+<body>
+
+<!-- body -->
+<table class="body-wrap" bgcolor="#f6f6f6" style="background-image: url(bg.jpg)">
+  <tr>
+    <td></td>
+    <td class="container" bgcolor="#FFFFFF">
+
+      <!-- content -->
+      <div class="content">
+          <table>
+            <tr>
+              <td style="width: 33%; text-align: center;">
+                  <ul>
+                      <li>Wine</li>
+                      <li>Spirits</li>
+                      <li>Beer</li>
+                  </ul>
+              </td>
+              <td style="width: 33%; text-align: center;">
+                  <div class="logo">
+                      <img src="logo.jpg" />
+                  </div>
+              </td>
+              <td style="width: 33%; text-align: center;">
+                  <ul style="list-type: none;">
+                      <li>Housewares</li>
+                      <li>Food</li>
+                  </ul>
+              </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+              <td style="width: 100%">
+                <p>Hi #XXXXXX,</p>
+                <p>Thanks for shopping at White Horse Wine & Spirits!</p>
+                <p>Your order number is #XXXXX.</p>
+              </td>
+            </tr>
+        </table>
+        <table>
+          <tr>
+              <td style="width: 50%">
+                  <h3>Shipping Info</h3>
+                  <hr>
+                  <p>
+                      Adam Sternberger<br/>
+                      332 West Ave.<br/>
+                      Ocean City, NJ<br/>
+                      US 08226-4041
+                  </p>
+              </td>
+              <td style="width: 50%">
+                  <h3>Billing Info</h3>
+                  <hr>
+                  <p>
+                      Adam Sternberger<br/>
+                      332 West Ave.<br/>
+                      Ocean City, NJ<br/>
+                      US 08226-4041
+                  </p>
+              </td>
+          </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    Item Description
+                </td>
+                <td>
+                    Quantity
+                </td>
+                <td>
+                    Price
+                </td>
+                <td>
+                    Item Total
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <td>
+                    <img src="wine.jpg" />
+                </td>
+                <td>
+                    <p>
+                        14 Hands Cabernet Sauvignon<br/>
+                        750mL<br/>
+                    </p>
+                </td>
+                <td>
+                    1x
+                </td>
+                <td>
+                    $10.99
+                </td>
+                <td>
+                    $10.99
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <td>
+                    <img src="wine.jpg" />
+                </td>
+                <td>
+                    <p>
+                        14 Hands Cabernet Sauvignon<br/>
+                        750mL<br/>
+                    </p>
+                </td>
+                <td>
+                    1x
+                </td>
+                <td>
+                    $10.99
+                </td>
+                <td>
+                    $10.99
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <td>
+                    <img src="wine.jpg" />
+                </td>
+                <td>
+                    <p>
+                        14 Hands Cabernet Sauvignon<br/>
+                        750mL<br/>
+                    </p>
+                </td>
+                <td>
+                    1x
+                </td>
+                <td>
+                    $10.99
+                </td>
+                <td>
+                    $10.99
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        Shipping via FedEx Ground<br/>
+                        Order Number: #1321876 Delivers 3-5 business days
+                    </p>
+
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td style="width: 50%">
+                    Order Summary
+                    <hr>
+                    <table>
+                        <tr>
+                            <td>
+                                Subtotal
+                            </td>
+                            <td>
+                                $156.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Discounted Savings
+                            </td>
+                            <td>
+                                -$30.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Shipping
+                            </td>
+                            <td>
+                                FREE
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Tax
+                            </td>
+                            <td>
+                                $1.26
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Order Total
+                            </td>
+                            <td>
+                                $127.26
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="width: 50%">
+                    Payment Summary
+                    <hr>
+                    <table>
+                        <tr>
+                            <td>
+                                Credit Card
+                            </td>
+                            <td>
+                                $127.26
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Gift Card
+                            </td>
+                            <td>
+                                $0.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Total
+                            </td>
+                            <td>
+                                $127.26
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <td>
+                    <p>We're currently processing your order, and we'll email your shipping confirmation when it leaves our store.  If there are any vintage or stock issues we will contact you via email immediately.</p>
+                    <p>For easy access to your order status and history, register for an account. Account holders can easily manage their profile, shipping and billing information. Sign up for our emails to see what's happening at White Horse!</p>
+                    <p>If you have any questions, please contact us at info@whitehorsewine.com or 609-677-9880.</p>
+
+                    <p>
+                        Thanks,<br/>
+                        White Horse Wine and Spirits
+                    </p>
+
+
+                </td>
+            </tr>
+        </table>
+    </div>
+      <!-- /content -->
+
+    </td>
+    <td></td>
+  </tr>
+</table>
+<!-- /body -->
+
+<!-- footer -->
+<table class="footer-wrap">
+  <tr>
+    <td></td>
+    <td class="container">
+
+      <!-- content -->
+      <div class="content">
+        <table>
+          <tr>
+            <td align="center">
+              <p>Don't like these annoying emails? <a href="#"><unsubscribe>Unsubscribe</unsubscribe></a>.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- /content -->
+
+    </td>
+    <td></td>
+  </tr>
+</table>
+<!-- /footer -->
+
+</body>
+</html>
