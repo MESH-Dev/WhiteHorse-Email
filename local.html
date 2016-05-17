@@ -18,15 +18,24 @@
       <div class="content">
           <table class="header" style="width: 100%;">
             <tr>
-              <td style="width: 38%; text-align: center;">  
+              <td style="width: 38%; text-align: center;">
+                  <ul style="list-style-type: none; float: left; list-style-type: none; text-align: center; margin: 0;">
+                      <li style="display: inline-block;"><a href="https://white-horse-5.myshopify.com/collections/wine" style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 10px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin-right: 5px;">Wine</a></li>
+                      <li style="display: inline-block;"><a href="https://white-horse-5.myshopify.com/collections/spirits" style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 10px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin-right: 5px;">Spirits</a></li>
+                      <li style="display: inline-block;"><a href="https://white-horse-5.myshopify.com/collections/beer" style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 10px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin-right: 5px;">Beer</a></li>
+                  </ul>
                   <hr style="border-top: 1px solid black; border-bottom: 3px solid black; height: 2px; border-left: white; border-right: white; float: left; width: 100%; margin-top: 5px;">
               </td>
               <td style="width: 24%;">
-                  <div style="margin: auto;">
+                  <div style="text-align: center;">
                       <img src="https://cdn.shopify.com/s/files/1/1154/8424/files/logo.jpg?810046599697733911" />
                   </div>
               </td>
               <td style="width: 38%; text-align: center;">
+                  <ul style="list-style-type: none; float: left; list-style-type: none; text-align: center; margin: 0;">
+                      <li style="display: inline-block;"><a href="https://white-horse-5.myshopify.com/collections/housewares" style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 10px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin-right: 5px;">Housewares</a></li>
+                      <li style="display: inline-block;"><a href="https://white-horse-5.myshopify.com/collections/food" style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 10px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin-right: 5px;">Food</a></li>
+                  </ul>
                   <hr style="border-top: 1px solid black; border-bottom: 3px solid black; height: 2px; border-left: white; border-right: white; float: left; width: 100%; margin-top: 5px;">
               </td>
             </tr>
@@ -34,49 +43,204 @@
         <table class="message" style="margin-bottom: 40px; width: 100%;">
             <tr>
               <td style="width: 100%">
-                <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;"><strong style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">Hi {{ shipping_address.first_name }},</strong></p>
-                <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">Thanks for shopping at White Horse Wine & Spirits!</p>
-                <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">Your order number is <span style="color: #ed1c24; font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;">{{ order_name }}.</span></p>
+                <h1 style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 24px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; text-align: center;">Billing Details</h1>
               </td>
             </tr>
         </table>
         <table class="addresses" style="margin-bottom: 40px; width: 100%;">
           <tr>
-              <td style="width: 45%; padding-right: 5%;">
-                  <h3 style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin: 0;">Shipping Info</h3>
-                  <hr style="border-bottom: 3px solid black; height: 3px; border-left: white; border-right: white; border-top: white; margin-bottom: 20px; margin-top: 5px;">
-                  <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
-                      <strong style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">{{ shipping_address.first_name }} {{ shipping_address.last_name }}</strong><br/>
-                      {{ shipping_address.street }}<br/>
-                      {{ shipping_address.city }}, {{ shipping_address.province_code }}<br/>
-                      {{ shipping_address.country }} {{ shipping_address.zip | upcase }}
-                  </p>
+              <td style="width: 45%; padding-right: 5%; vertical-align: top;">
+                <h3 style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin: 0;">Billing</h3>
+                <hr style="border-bottom: 3px solid black; height: 3px; border-left: white; border-right: white; border-top: white; margin-bottom: 20px; margin-top: 5px;">
+                <table style="width: 100%;">
+                  <tr>
+                    <td style="vertical-align: top; margin-bottom: 5px;">
+                      <strong style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black;">Name</strong>
+                    </td>
+                    <td style="vertical-align: top; margin-bottom: 5px;">
+                      <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                        {{ billing_address.first_name }} {{ billing_address.last_name }}
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align: top; margin-bottom: 5px;">
+                      <strong style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black;">Address</strong>
+                    </td>
+                    <td style="vertical-align: top; margin-bottom: 5px;">
+                      <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                        {{ billing_address.street }}
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align: top; margin-bottom: 5px;">
+                      <strong style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black;">City</strong>
+                    </td>
+                    <td style="vertical-align: top; margin-bottom: 5px;">
+                      <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                        {{ billing_address.city }}
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align: top; margin-bottom: 5px;">
+                      <strong style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black;">State</strong>
+                    </td>
+                    <td style="vertical-align: top; margin-bottom: 5px;">
+                      <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                        {{ billing_address.providence_code }}
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align: top; margin-bottom: 5px;">
+                      <strong style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black;">Zip</strong>
+                    </td>
+                    <td style="vertical-align: top; margin-bottom: 5px;">
+                      <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                        {{ billing_address.zip | upcase }}
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align: top; margin-bottom: 5px;">
+                      <strong style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black;">Country</strong>
+                    </td>
+                    <td style="vertical-align: top; margin-bottom: 5px;">
+                      <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                        {{ billing_address.country }}
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align: top; margin-bottom: 5px;">
+                      <strong style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black;">Phone</strong>
+                    </td>
+                    <td style="vertical-align: top; margin-bottom: 5px;">
+                      <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                        {{ billing_address.phone }}
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align: top; margin-bottom: 5px;">
+                      <strong style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black;">Are you over 21 years of age?</strong>
+                    </td>
+                    <td style="vertical-align: top; margin-bottom: 5px;">
+                      <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                        Yes
+                      </p>
+                    </td>
+                  </tr>
+                </table>
               </td>
-              <td style="width: 50%;">
-                  <h3 style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin: 0;">Billing Info</h3>
+
+              <td style="width: 50%; vertical-align: top;">
+                  <h3 style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin: 0;">Shipping</h3>
                   <hr style="border-bottom: 3px solid black; height: 3px; border-left: white; border-right: white; border-top: white; margin-bottom: 20px; margin-top: 5px;">
-                  <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
-                      <strong style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">{{ billing_address.first_name }} {{ billing_address.last_name }}</strong><br/>
-                      {{ billing_address.street }}<br/>
-                      {{ billing_address.city }}, {{ billing_address.providence_code }}<br/>
-                      {{ billing_address.country }} {{ billing_address.zip | upcase }}
-                  </p>
+                  <table style="width: 100%;">
+                    <tr>
+                      <td style="vertical-align: top; margin-bottom: 5px;">
+                        <strong style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black;">Name</strong>
+                      </td>
+                      <td style="vertical-align: top; margin-bottom: 5px;">
+                        <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                          {{ shipping_address.first_name }} {{ shipping_address.last_name }}
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: top; margin-bottom: 5px;">
+                        <strong style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black;">Address</strong>
+                      </td>
+                      <td style="vertical-align: top; margin-bottom: 5px;">
+                        <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                          {{ shipping_address.street }}
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: top; margin-bottom: 5px;">
+                        <strong style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black;">City</strong>
+                      </td>
+                      <td style="vertical-align: top; margin-bottom: 5px;">
+                        <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                          {{ shipping_address.city }}
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: top; margin-bottom: 5px;">
+                        <strong style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black;">State</strong>
+                      </td>
+                      <td style="vertical-align: top; margin-bottom: 5px;">
+                        <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                          {{ shipping_address.providence_code }}
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: top; margin-bottom: 5px;">
+                        <strong style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black;">Zip</strong>
+                      </td>
+                      <td style="vertical-align: top; margin-bottom: 5px;">
+                        <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                          {{ shipping_address.zip | upcase }}
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: top; margin-bottom: 5px;">
+                        <strong style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black;">Country</strong>
+                      </td>
+                      <td style="vertical-align: top; margin-bottom: 5px;">
+                        <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                          {{ shipping_address.country }}
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: top; margin-bottom: 5px;">
+                        <strong style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black;">Phone</strong>
+                      </td>
+                      <td style="vertical-align: top; margin-bottom: 5px;">
+                        <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                          {{ shipping_address.phone }}
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: top; margin-bottom: 5px;">
+                        <strong style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black;">Are you over 21 years of age?</strong>
+                      </td>
+                      <td style="vertical-align: top; margin-bottom: 5px;">
+                        <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                          Yes
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
               </td>
           </tr>
         </table>
+
         <table class="products" style="width: 100%;">
             <tr>
-                <td style="width: 55%;">
-                    <h4 style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 10px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin: 0;">Item Description</h4>
+                <td style="width: 15%;">
+                    <h4 style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 10px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin: 0;">Size/Vintage</h4>
+                </td>
+                <td style="width: 40%;">
+                    <h4 style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 10px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin: 0;">Product Name</h4>
                 </td>
                 <td style="width: 15%;">
                     <h4 style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 10px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin: 0;">Quantity</h4>
                 </td>
                 <td style="width: 15%;">
-                    <h4 style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 10px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin: 0;">Price</h4>
+                    <h4 style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 10px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin: 0;">Unit Price</h4>
                 </td>
                 <td style="width: 15%;">
-                    <h4 style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 10px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin: 0;">Item Total</h4>
+                    <h4 style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 10px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin: 0;">Price</h4>
                 </td>
             </tr>
         </table>
@@ -85,13 +249,79 @@
         {% for line_item in line_items %}
           <table class="product" style="width: 100%;">
               <tr>
-                  <td style="width: 15%; vertical-align: top;">
-                      <img src="{{ line_item.image | img_url: 'thumb' }}" style="margin: auto;">
+                  <td style="width: 15%; vertical-align: top; font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                      {% for tag in line_item.product.tags %}
+
+                        {% if tag == '1 L' %}
+                          {% assign size = '1 L' %}
+                        {% elsif tag == '1.5 L' %}
+                          {% assign size = '1.5 L' %}
+                        {% elsif tag == '1.75L' %}
+                          {% assign size = '1.75 L' %}
+                        {% elsif tag == '2 L' %}
+                          {% assign size = '2 L' %}
+                        {% elsif tag == '3 L' %}
+                          {% assign size = '3 L' %}
+                        {% elsif tag == '4 L' %}
+                          {% assign size = '4 L' %}
+                        {% elsif tag == '5 L' %}
+                          {% assign size = '5 L' %}
+                        {% elsif tag == '350ml' %}
+                          {% assign size = '350 mL' %}
+                        {% elsif tag == '375ml' %}
+                          {% assign size = '375 mL' %}
+                        {% elsif tag == '500ml' %}
+                          {% assign size = '500 mL' %}
+                        {% elsif tag == '750ml' %}
+                          {% assign size = '750 mL' %}
+                        {% endif %}
+
+                        {% if tag == '2004' %}
+                          {% assign year = '2004' %}
+                        {% elsif tag == '2005' %}
+                          {% assign year = '2005' %}
+                        {% elsif tag == '2006' %}
+                          {% assign year = '2006' %}
+                        {% elsif tag == '2007' %}
+                          {% assign year = '2007' %}
+                        {% elsif tag == '2008' %}
+                          {% assign year = '2008' %}
+                        {% elsif tag == '2009' %}
+                          {% assign year = '2009' %}
+                        {% elsif tag == '2010' %}
+                          {% assign year = '2010' %}
+                        {% elsif tag == '2011' %}
+                          {% assign year = '2011' %}
+                        {% elsif tag == '2012' %}
+                          {% assign year = '2012' %}
+                        {% elsif tag == '2013' %}
+                          {% assign year = '2013' %}
+                        {% elsif tag == '2014' %}
+                          {% assign year = '2014' %}
+                        {% elsif tag == '2015' %}
+                          {% assign year = '2015' %}
+                        {% endif %}
+
+                      {% endfor %}
+
+                      {% if size != "" %}
+                        <span style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">{{ size }}</span>
+                      {% endif %}
+
+                      {% if size != "" and year != "" %}
+                       /
+                      {% endif %}
+
+                      {% if year != "" %}
+                        <span style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">{{ year }}</span>
+                      {% endif %}
+
+                      {% assign year = "" %}
+                      {% assign size = "" %}
                   </td>
                   <td style="width: 40%; padding-right: 10px; vertical-align: top;">
                       <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
-                          <strong style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">{{ line_item.title }}</strong><br/>
-                          {{ line_item.tags }}<br/>
+                          <strong style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">{{ line_item.product.title }}</strong><br/>
                       </p>
                   </td>
                   <td style="width: 15%; vertical-align: top; font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
@@ -105,30 +335,17 @@
                   </td>
               </tr>
           </table>
+          <hr style="border-bottom: 1px solid black; height: 2px; border-left: white; border-right: white; margin-top: 20px; border-top: 0;">
         {% endfor %}
 
 
-        <hr style="border-bottom: 1px solid black; height: 2px; border-left: white; border-right: white; margin-top: 20px; border-top: 0;">
-        <table class="notes" style="margin-bottom: 40px;" style="width: 100%;">
+        <table class="payments" style="margin-bottom: 40px; width: 100%; margin-top: 40px;">
             <tr>
-                <td>
-                    <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
-                        Shipping via {{ shipping_method.title }}<br/>
-                        Order Number: <span style="color: #ed1c24; font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;">{{ order_name }}</span>
-                        {% if shipping_method.title == 'Store Pickup' %}Pick up your order in the store! <a href="" style="color: #ed1c24; font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;">Get directions.</a>{% else %}Delivers 3-5 business days{% endif %}
-                    </p>
-
-                </td>
-            </tr>
-        </table>
-        <table class="payments" style="margin-bottom: 40px; width: 100%;">
-            <tr>
-                <td style="width: 45%; padding-right: 5%; vertical-align: top;">
-                    <h3 style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin: 0;">Order Summary</h3>
-                    <hr style="border-bottom: 3px solid black; height: 3px; border-left: white; border-right: white; border-top: white; margin-bottom: 20px; margin-top: 5px;">
+                <td style="width: 70%"></td>
+                <td style="width: 30%;  vertical-align: top;">
                     <table style="width: 100%;">
                         <tr>
-                            <td style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                            <td style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin: 0;">
                                 Subtotal
                             </td>
                             <td style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
@@ -136,7 +353,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                            <td style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin: 0;">
                                 Discounted Savings
                             </td>
                             <td style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
@@ -144,15 +361,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
-                                Shipping
-                            </td>
-                            <td style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
-                                {{ shipping_price | money }}
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+                            <td style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin: 0;">
                                 Tax
                             </td>
                             <td style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
@@ -160,38 +369,16 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
-                                Order Total
-                            </td>
-                            <td style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
-                                <strong style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">{{ total_price | money }}</strong>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-                <td style="width: 50%; vertical-align: top;">
-                    <h3 style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin: 0;">Payment Summary</h3>
-                    <hr style="border-bottom: 3px solid black; height: 3px; border-left: white; border-right: white; border-top: white; margin-bottom: 20px; margin-top: 5px;">
-                    <table style="width: 100%;">
-                        <tr>
-                            <td style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
-                                {{ transaction.gateway }}
-                            </td>
-                            <td style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
-                                {{ transaction.amount | money }}
-                            </td>
-                        </tr>
-                        <!-- <tr>
-                            <td style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
-                                Gift Card
+                            <td style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin: 0;">
+                                Local Shipping
                             </td>
                             <td style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
                                 $0.00
                             </td>
-                        </tr> -->
+                        </tr>
                         <tr>
-                            <td style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
-                                Total
+                            <td style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 12px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin: 0;">
+                                Grand Total
                             </td>
                             <td style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
                                 <strong style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">{{ total_price | money }}</strong>
@@ -201,22 +388,27 @@
                 </td>
             </tr>
         </table>
-        <hr style="border-bottom: 3px solid black; height: 3px; border-left: white; border-right: white; border-top: white; margin-bottom: 20px;">
+
         <table class="footer-notes" style="width: 100%;">
             <tr>
-                <td>
-                    <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0; margin-bottom: 20px;">We're currently processing your order, and we'll email your shipping confirmation when it leaves our store.  If there are any vintage or stock issues we will contact you via email immediately.</p>
-                    <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0; margin-bottom: 20px;">For easy access to your order status and history, <a style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; color: #ed1c24;" href="http://white-horse-5.myshopify.com/account/register">register for an account</a>. Account holders can easily manage their profile, shipping and billing information. <a href="" style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; color: #ed1c24;">Sign up</a> for our emails to see what's happening at White Horse!</p>
-                    <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0; margin-bottom: 20px;">If you have any questions, please contact us at <a style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; color: #ed1c24;" href="mailto:info@whitehorsewine.com">info@whitehorsewine.com</a> or 609-677-9880.</p>
-
-                    <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0; margin-bottom: 20px;">
-                        Thanks,<br/>
-                        White Horse Wine and Spirits
-                    </p>
-
-
+                <td style="width: 10%"></td>
+                <td style="width: 90%; float: right;">
+                    <h2 style="font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; text-transform: uppercase; font-size: 16px; font-weight: bold; letter-spacing: 0.1em; text-decoration: none; color: black; margin-bottom: 50px;">*Adult Signature Required: ____________</h2>
                 </td>
             </tr>
+        </table>
+
+        <table style="width: 100%;">
+          <tr>
+            <td>
+              <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0; margin-bottom: 0px; font-weight: bold;">
+                  *Recipient must be at least 21 years of age*
+              </p>
+              <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0; margin-bottom: 20px;">
+                Deliveries will not be made to any intoxicated person. White Horse Wine & Spirits reserves the right to contact me regarding any incomplete processsing of my order or payment.
+              </p>
+            </td>
+          </tr>
         </table>
     </div>
       <!-- /content -->
